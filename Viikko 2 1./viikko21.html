@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Viikon 2 ensimmäiset tehtävät</title>
+  <link src="viikko21.css" rel="stylesheet">
+  <script src="viikko21.js"></script>
+  </head>
+<body>
+<div class="tehtävä1">
+  <h1>Tehtävä 1</h1>
+  <pre>Anna kolme lukua ja paina "Järjestä"-nappulaa,
+  niin kone sijoittaa numerot ruudulle
+  pienimmästä suurimpaan.</pre>
+  <p>Anna ensimmäinen luku :</p>
+  <input id="eka" type="text">
+  <br> 
+  <p>Anna toinen luku :</p>
+  <input id="toka" type="text">
+  <br>
+  <p>Anna kolmas luku :</p>
+  <input id="kolmas" type="text"><br>
+  <button type="button" name="jarjesta" onclick=jarjesta()>Järjestä</button>
+  </div>
+
+<div class="tehtävä2">
+  <h1>Tehtävä 2</h1>
+  <pre>Anna viisi lukua ja paina "Etsi"-nappulaa,
+  niin kone etsii niistä suurimman.</pre>
+  <p>Anna ensimmäinen luku :</p>
+  <input type="text" id="ykkönen">
+  <br>
+  <p>Anna toinen luku :</p>
+  <input type="text" id="kakkonen">
+  <p>Anna kolmas luku :</p>
+  <input type="text" id="kolmonen">
+  <p>Anna neljäs luku :</p>
+  <input type="text" id="nelonen">
+  <p>Anna viides luku :</p>
+  <input type="text" id="vitonen">
+  <br>
+  <button type="button" name="etsi" onclick=etsisuurin()>Etsi</button>
+  </div>
+
+<div class="tehtävä3">
+  <h1>Tehtävä 3</h1>
+  <pre>Anna luku ja paina "Tarkista"-nappulaa, niin 
+  kone tarkistaa onko luku parillinen vai pariton.</pre>
+  <p>Anna luku :</p>
+  <input id="pariton" type="text"><br>
+  <button type="button" name="tarkista" onclick=tarkista()>Tarkista</button>
+  </div>
+
+<div class="tehtävä4">
+  <h1>Tehtävä 4</h1>
+  <pre>Anna ikäsi ja paina "Testaa"-nappulaa, 
+  niin kone kertoo mitä ajoneuvoa saat ajaa.</pre>
+  <p>Anna ikäsi :</p>
+  <input type="text" id="ikä">
+  <br>
+  <button type="button" name="testaa" onclick=testaaika()>Testaa</button>
+  </div>
+
+<div class="tehtävä5">
+  <h1>Tehtävä 5</h1>
+  <pre>Valitse kieli ja paina "Käännä"-nappulaa,
+  niin kone kääntää "Hei maailma"-tekstin sille kielelle.</pre>
+  <select id="kieli">
+    <option value="eng">Englanti</option>
+    <option value="swe">Ruotsi</option>
+    <option value="esp">Espanja</option>
+  <br>
+    <button type="button" name="käännä" onclick="kaanna()">Käännä</button>
+    </div>
+  </body>
+  </html>
