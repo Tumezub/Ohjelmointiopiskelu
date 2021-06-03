@@ -1,19 +1,23 @@
-.tehtävä1 {
-background-color:orange;
+.vieri
+{
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 10px;
+  float:left;
 }
-
-.tehtävä2 {
-background-color:yellow;
+#yksi{
+  background-color: orange;
 }
-
-.tehtävä3 {
-background-color:lightblue;
+#kaksi{
+  background-color: #FFCCCC;
 }
-
-.tehtävä4 {
-background-color:pink;
+#kolme{
+    background-color: #FFFF99;
 }
-
-.tehtävä5 {
-background-color:lightgreen;
+#nelja{
+    background-color: #B3FFB3;
+}
+#viisi{
+    background-color: #B3D1FF;
 }
