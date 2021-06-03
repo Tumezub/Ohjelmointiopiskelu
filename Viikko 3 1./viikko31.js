@@ -16,7 +16,7 @@ function muutaSalasanaksi()
   var salasana = "<p>";
   for(var j = 0; j < ksana.length; j++)
   {
-    salasana += ksana[j] + 'Ã–';
+    salasana += ksana[j] + 'Ö';
   }
   salasana += "</p>";
   document.getElementById('salasana').innerHTML = salasana;
@@ -27,7 +27,7 @@ function tarkistaKirjain()
   var vastaus = 'ei ole';
   for(var k = 0; k < annettuSana.length; k++)
   {
-    if(annettuSana[k] == 'Ã¶' || annettuSana[k] == 'Ã–')
+    if(annettuSana[k] == 'ö' || annettuSana[k] == 'Ö')
     {
       vastaus = 'on';
     }
