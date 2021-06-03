@@ -9,20 +9,20 @@ function jarjesta()
   {
     if(luku2 < luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
+      document.write("Lukujen järjestys: " + luku1 + ' ' + luku2 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
+      document.write("Lukujen järjestys: " + luku1 + ' ' + luku3 + ' ' + luku2);
     }
   }
   else if(luku2 < luku1 && luku2 < luku3)
   {
     if(luku1<luku3)
     {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
+      document.write("Lukujen järjestys: " + luku2 + ' ' + luku1 + ' ' + luku3);
     }
     else {
-      document.write("Lukujen jÃ¤rjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
+      document.write("Lukujen järjestys: " + luku2 + ' ' + luku3 + ' ' + luku1);
 
     }
   }
@@ -30,10 +30,10 @@ function jarjesta()
     {
       if(luku1 < luku2)
       {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
+        document.write("Lukujen järjestys: " + luku3 + ' ' + luku1 + ' ' + luku2);
       }
       else {
-        document.write("Lukujen jÃ¤rjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
+        document.write("Lukujen järjestys: " + luku3 + ' ' + luku2 + ' ' + luku1);
 
       }
     }
@@ -66,7 +66,7 @@ function etsiSuurin()
       suurin = l1;
     }
     document.write("Annoit luvut: " + l1 + ' ' + l2 + ' ' + l3 + ' ' + l4 + ' ' + l5);
-    document.write("<br>Suurin niistÃ¤ on: " + suurin);
+    document.write("<br>Suurin niistä on: " + suurin);
   }
   function paritonParillinen()
   {
@@ -86,7 +86,7 @@ function etsiSuurin()
     var age = parseInt(document.getElementById('ika').value);
     if(age < 16)
     {
-      document.write("Voit ajaa polkupyÃ¶rÃ¤Ã¤");
+      document.write("Voit ajaa polkupyörää");
     }
     else if(age < 18)
     {
@@ -105,7 +105,7 @@ function etsiSuurin()
     }
     else if(lang == 'swe')
     {
-      document.write("Hej vÃ¤rlden!");
+      document.write("Hej världen!");
     }
     else {
       document.write("Hola Mundo!");
