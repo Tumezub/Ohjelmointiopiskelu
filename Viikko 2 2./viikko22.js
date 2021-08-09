@@ -36,11 +36,11 @@ function vkpv()
 function vuosiluku() {
   var vluku;
   vluku = document.getElementById('kolme').value;
-  if(vluku % 4 == 0)
+  if(vluku % 400 == 0)
   document.write("Vuosi on karkausvuosi");
   else if(vluku % 100 == 0)
-  document.write("Vuosi on karkausvuosi");
-  else if(vluku % 400 == 0)
+  document.write("Vuosi ei ole karkaus vuosi");
+  else if(vluku % 4 == 0)
   document.write("Vuosi on karkausvuosi");
   else {
     document.write("Vuosi ei ole karkaus vuosi");
@@ -50,21 +50,17 @@ function vuosiluku() {
 
 
 function keskiarvo() {
-  var array;
-  var array2;
-  array = [document.getElementById('eka').value, document.getElementById('toka').value, document.getElementById('kolmas').value, document.getElementById('neljäs').value, document.getElementById('viides').value];
-  array2 = [document.getElementById('eka').value, document.getElementById('toka').value, document.getElementById('kolmas').value, document.getElementById('neljäs').value, document.getElementById('viides').value];
-  var total = 0;
-  for(var i = 0; i < array.length; i++) {
-    total += array[i];
-  }
-  var avg = total / array.length;
-
-  var total2;
-  total2 = document.getElementById('eka').value + document.getElementById('toka').value + document.getElementById('kolmas').value + document.getElementById('neljäs').value + document.getElementById('viides').value;
-  document.write("lukujen summa on " + total2 + " ja keskiarvo on " + avg);
-  //alert(array.length);
-  //alert(total2);
+  var luku1 = parseInt(document.getElementById('eka').value);
+  var luku2 = parseInt(document.getElementById('toka').value);
+  var luku3 = parseInt(document.getElementById('kolmas').value);
+  var luku4 = parseInt(document.getElementById('neljäs').value);
+  var luku5 = parseInt(document.getElementById('viides').value);
+  var summa;
+  summa = luku1 + luku2 + luku3 + luku4 + luku5;
+  var karvo;
+  karvo = summa / 5;
+  document.write("Lukujen summa on " + summa + " ja niiden keskiarvo on " + karvo);
+  //alert(summa);
 }
 
 
@@ -72,26 +68,17 @@ function keskiarvo() {
 
 function laske() {
   var luku;
-  luku = document.getElementById('viisi');
-  var lause = 0;
-  var lause2 = lause;
-  var lause3 = lause2;
-  var lause4 = lause3;
-  var lause5 = lause4;
-  var lause6 = lause5;
-  var lause7 = lause6;
-  var lause8 = lause7;
-  var lause9 = lause8;
-  var lause10 = lause9;
-  lause += luku + "x1 = " + luku * 1;
-  lause2 += luku + "x2 = " + luku * 2;
-  lause3 += luku + "x3 = " + luku * 3;
-  lause4 += luku + "x4 = " + luku * 4;
-  lause5 += luku + "x5 = " + luku * 5;
-  lause6 += luku + "x6 = " + luku * 6;
-  lause7 += luku + "x7 = " + luku * 7;
-  lause8 += luku + "x8 = " + luku * 8;
-  lause9 += luku + "x9 = " + luku * 9;
-  lause10 += luku + "x10 = " + luku * 10;
-  document.write("Laskutoimituksen tulos on : " + lause + ' ' + lause2 + ' ' + lause3 + ' ' + lause4 + ' ' + lause5 + ' ' + lause6 + ' ' + lause7 + ' ' + lause8 + ' ' + lause9 + ' ' + lause10);
+  luku = document.getElementById('viisi').value;
+  var lause;
+  lause = luku + "x1 = " + luku * 1 + ", ";
+  lause += luku + "x2 = " + luku * 2 + ", ";
+  lause += luku + "x3 = " + luku * 3 + ", ";
+  lause += luku + "x4 = " + luku * 4 + ", ";
+  lause += luku + "x5 = " + luku * 5 + ", ";
+  lause += luku + "x6 = " + luku * 6 + ", ";
+  lause += luku + "x7 = " + luku * 7 + ", ";
+  lause += luku + "x8 = " + luku * 8 + ", ";
+  lause += luku + "x9 = " + luku * 9 + ", ";
+  lause += luku + "x10 = " + luku * 10 + ", ";
+  document.write("Laskutoimituksen tulos on : " + lause);
 }
